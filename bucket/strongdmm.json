@@ -1,0 +1,23 @@
+{
+    "version": "2.11.0.alpha",
+    "description": "StrongDMM is an alternative yet robust map editor for BYOND.",
+    "homepage": "https://github.com/SpaiR/StrongDMM",
+    "license": "GPL-3.0",
+    "url": "https://github.com/SpaiR/StrongDMM/releases/download/v2.11.0.alpha/strongdmm-windows.zip",
+	"hash": "sha256:1045fc5663f2976302f7c6d1415e8156768499dc490a7ea3225cbc9215021420",
+    "bin": "StrongDMM.exe",
+    "shortcuts": [
+        [
+            "StrongDMM.exe",
+            "StrongDMM"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/SpaiR/StrongDMM/releases/download/v$version/strongdmm-windows.zip",
+        "hash": {
+            "url": "$baseurl/strongdmm-v$version-x86_64-pc-windows-gnu.exe.sha256",
+            "regex": "$basename.*?$sha256"
+        }
+    }
+}
